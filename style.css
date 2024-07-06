@@ -64,10 +64,9 @@ article{
     font-size: 50px;
     font-weight: 100;
     margin-block: 30px;
+    /* line-height: 45px; */
 }
-/* article:nth-of-type(1){
-    align-items: center;
-} */
+
 
 button{
     padding: 7px 35px;
@@ -94,13 +93,12 @@ button a:hover{
     width: 85%;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 500px) {
     
     header{
         display: flex;
         justify-content: space-between;
         margin-inline: 10px;
-        /* background: yellowgreen; */
         min-height: 43px;
     }
 
@@ -109,7 +107,6 @@ button a:hover{
         right: 100px;
         top: 6%;
         background-color: rgb(187, 29, 29);
-    
         display: none;
     }
 
@@ -119,16 +116,23 @@ button a:hover{
     }
     nav ul li{
         margin-bottom: 5px;
-        margin-right: 7px;
+       
         
+    }
+
+    nav ul li a {
+        border-radius: 4px;
+        padding: 4px;
     }
 
     nav ul li a:hover{
         background-color: #fff;
+        
     }
 
     .nav-toggle:checked ~ nav{
         display: block;
+        text-align: center;
     }
 
     .nav-toggle{
@@ -137,9 +141,8 @@ button a:hover{
 
     .nav-toggle-label{
         position: absolute;
-        top: ;
+
         right: 10px;
-        /* border: 1px solid red; */
         height: 10%;
         display: flex;
         align-items: center;
@@ -192,6 +195,7 @@ button a:hover{
         text-align: center;
         width: 100%;
         margin-top: -40px;
+        line-height: 45px;
     }
 
     .part p{
@@ -209,10 +213,15 @@ button a:hover{
     button{
         border-radius: 20px;
         background: linear-gradient(rgb(2, 34, 65),rgba(14, 26, 23, 0.644));
+        padding: 14px 35px;
     } 
 
     button a{
         color: #fff;
+    }
+
+    .pics img{
+        width: 65%;
     }
 
 }
